@@ -16,6 +16,7 @@ import Cart from './Cart';
 import Checkout from './Checkout';
 import {BrowserRouter as Router , Routes, Route} from "react-router-dom";
 import BestsellingHome from './components/BestsellingHome';
+import ShipmentDetails from './components/ShipmentDetails';
 
 
 function App() {
@@ -35,8 +36,9 @@ function App() {
                   <Route exact="true" path="/cart" element={<Cart/>}/>
                   <Route exact="true" path="/checkout" element={<Checkout/>}/>
                   <Route exact="true" path="/bestsellinghome" element={<BestsellingHome/>}/>
+                  <Route exact="true" path="/shipment" element={<ShipmentDetails />}/>
               </Routes>
-              <Footer/>
+              {/* <Footer/> */}
         </Router>
     </div>
   );

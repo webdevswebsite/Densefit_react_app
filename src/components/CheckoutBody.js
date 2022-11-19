@@ -11,7 +11,7 @@ function CheckoutBody () {
                  <div className="row">
                      <div className="col-lg-8">
                        <div className="left-checkout">
-                          <BillingDetais/>
+                          {/* <BillingDetais/> */}
                           <Paymentmethod/>
                        </div>
                      </div>

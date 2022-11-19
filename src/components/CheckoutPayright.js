@@ -1,63 +1,66 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { CartState } from "../context/Context";
 
-function CheckoutPayright () {
+function CheckoutPayright() {
+    const {
+        state: { cart },
+        dispatch,
+    } = CartState();
 
-    return(
+    const [ total, setTotal ] = useState()
+
+    useEffect(() => {
+        setTotal(cart.reduce((acc, curr) => acc + Number(curr.price), 0));
+    }, [ cart ])
+
+    return (
         <>
-          <div className="checkout-right mt-5 mt-lg-0">
-             <h2> Your Order </h2>
-             <div className="oder-summary-item mt-3">
+            <div className="checkout-right mt-5 mt-lg-0">
+                <h2> Your Order </h2>
+                <div className="oder-summary-item mt-3">
 
-                <table className="table checkout-table">
-                    <thead>
-                        <tr>
-                        <th scope="col"> Product </th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">amount</th>
-                        
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <td>
-                          ornare euismod
-                        </td>
-                        <td>x 1</td>
-                        <td>$15</td>
-                        
-                        </tr>
-                        <tr>
-                        <td>ornare euismod</td>
-                        <td>x 1</td>
-                        <td>$15</td>
-                        
-                        </tr>
-                        
-                    </tbody>
-                </table>
+                    <table className="table checkout-table">
+                        <thead>
+                            <tr>
+                                <th scope="col"> Product </th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">amount</th>
 
-                
-             </div>
-             <div className="oder-right-details-new">
-                              
-                    <hr/>
+                            </tr>
+                        </thead>
+                        {cart.map((prod) => (
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        {prod.title}
+                                    </td>
+                                    <td>({prod.qty}</td>
+                                    <td>{prod.price}</td>
+
+                                </tr>
+
+                            </tbody>
+                        ))}
+                    </table> 
+                </div>
+                <div className="oder-right-details-new">
+
+                    <hr />
                     <div className="price-sec-order">
-                    <p className="price-am"> Price <span> $250 </span></p>
-                    <p className="delivery-am"> Delivery charges <span> Free </span></p>
-                    <p className="discount-am"> Discount price <span> $ 10 </span></p>
-                    <div className="total-price p-0">
-                        <p className="discount-am mb-lg-0"> Total Amount <span> $ 280 </span></p>
-                    </div>
-                    
-                    </div>
-                    
-             </div>
-          </div>
+                        <div className="total-price p-0">
+                            <p className="discount-am mb-lg-0"> Total Amount: <span> $ {total} </span></p>
+                        </div>
 
-          <NavLink to="/checkout" className="btn paybn mt-3 w-100"> Payment now </NavLink>
+                    </div>
+
+                </div>
+            </div>
+            <form>
+            <NavLink to="/checkout" className="btn paybn mt-3 w-100"> Payment now </NavLink>
+            </form>
         </>
     );
-    
+
 }
 export default CheckoutPayright;

@@ -1,16 +1,17 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function BillingDetais () {
     return (
         <>
           <div className="biling-details">
              <h2> Billing Address </h2>
-             <form action="" method="get">
+             <form action="" method="post">
                 <div className="row mt-4">
                     <div className="col-lg-6">
                         <div className="form-group">
                            <label> First Name </label>
-                           <input type="text" className="form-control"/>
+                           <input type="text" className="form-control"  required/>
                         </div>
                        
                     </div>
@@ -281,7 +282,7 @@ function BillingDetais () {
                     <div className="col-lg-6">
                         <div className="form-group">
                            <label> State / Country </label>
-                           <input type="text" className="form-control"/>
+                           <input type="text" className="form-control" required/>
                         </div>
                        
                     </div>
@@ -292,36 +293,26 @@ function BillingDetais () {
                         </div>
                        
                     </div>
-                    <div className="col-lg-6">
-                        <div className="form-group">
-                           <label> Postal Code / Zipcode </label>
-                           <input type="text" className="form-control"/>
-                        </div>
-                       
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="form-group">
-                           <label> House Number </label>
-                           <input type="text" className="form-control"/>
-                        </div>
-                       
-                    </div>
+                 
                     <div className="col-lg-6">
                         <div className="form-group">
                            <label> Phone </label>
-                           <input type="text" className="form-control"/>
+                           <input type="text" className="form-control" required/>
                         </div>
                        
                     </div>
                     <div className="col-lg-12">
                         <div className="form-group">
-                           <label> Address 1 </label>
-                           <textarea className="form-control"></textarea>
+                           <label> Address/ House number </label>
+                           <textarea className="form-control" required></textarea>
                            
                         </div>
                        
                     </div>
-                </div>
+                    </div>
+                    <button type="submit" className='btn w-50 billingbtn'>
+                        <NavLink to="/checkout">Submit billing detail</NavLink>
+                    </button>
              </form>
           </div>
         </>

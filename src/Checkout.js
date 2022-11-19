@@ -6,10 +6,10 @@ function Checkout () {
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
-      document.title ="Vwine - Check Out"
+      document.title ="CheckOut"
     return (
         <>
-         <SubpageBanner name="Check Out" indexpage="Home" indexvisit="/" activepage="Check Out" />
+         <SubpageBanner name="Checkout" indexpage="Home" indexvisit="/" activepage="Checkout" />
          <CheckoutBody/>
         </>
     );

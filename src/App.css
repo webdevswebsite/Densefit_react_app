@@ -139,6 +139,7 @@ header{
     color: #c8693a;
 	font-weight:700;
 	margin-top: 5px;	
+	font-size: 11px;
 }
 .close-crt{
 	color:#212529;
@@ -2926,5 +2927,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	cursor: pointer !important;
 }
 
+.cart-item-container{
+	background: rgb(228, 227, 227);
+}
 
+.billingbtn{
+	/* background: #d00035 !important; */
+    color: #fff!important;
+	margin: 10px  25%;
+	text-decoration: none !important;
+
+}
 
