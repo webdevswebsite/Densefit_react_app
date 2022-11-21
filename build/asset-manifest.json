@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cbcf745e.css",
+    "main.js": "/static/js/main.d0b4e3c9.js",
+    "static/js/787.3a3bb09d.chunk.js": "/static/js/787.3a3bb09d.chunk.js",
+    "static/media/banner2-1.jpg": "/static/media/banner2-1.8e80429df667f0ea34e6.jpg",
+    "static/media/banner2-3.jpg": "/static/media/banner2-3.ce820b2b492f7777ff2d.jpg",
+    "static/media/bg-wine-shop.jpg": "/static/media/bg-wine-shop.9f1cc4082b6045b89360.jpg",
+    "static/media/banner3.jpg": "/static/media/banner3.196cc5c1e67983dd353a.jpg",
+    "static/media/About-Us-Image-1.jpg": "/static/media/About-Us-Image-1.d16ff46103a85bdc047e.jpg",
+    "static/media/slide7-1.jpg": "/static/media/slide7-1.238be4c0ae0c1c1b8713.jpg",
+    "static/media/product-3.png": "/static/media/product-3.7195e1174df704571094.png",
+    "static/media/ladiesglassblack.png": "/static/media/ladiesglassblack.d24073f3145e88be22fa.png",
+    "static/media/_optimized.png": "/static/media/601976e1873df1002150c789_optimized.dd4f1f7ab04528f37884.png",
+    "static/media/wine-bg.jpg": "/static/media/wine-bg.5f70632a826f304fcf14.jpg",
+    "static/media/ladiesglassoversize.png": "/static/media/ladiesglassoversize.9f501c25edf03dd44501.png",
+    "static/media/subpage-banner.jpg": "/static/media/subpage-banner.55bacbd2e1eee0befa64.jpg",
+    "static/media/aboutbg2.jpg": "/static/media/aboutbg2.2bea41766a2b71c0b545.jpg",
+    "static/media/ladiesglass1.png": "/static/media/ladiesglass1.3ae71f87a3254bf4e88f.png",
+    "static/media/_optimized_740_c740x1120-0x0.webp": "/static/media/6022263c97d5fb0021955751_optimized_740_c740x1120-0x0.fae1a8a6b48bbcc215ad.webp",
+    "static/media/aboutbg1.jpg": "/static/media/aboutbg1.d44cfd2b950fb02e32cb.jpg",
+    "static/media/istockphoto-1183406603-170667a.jpg": "/static/media/istockphoto-1183406603-170667a.a6c20fd56328b38cd8a9.jpg",
+    "static/media/b-7.jpg": "/static/media/b-7.c4dc948bc687c022e41a.jpg",
+    "static/media/istockphoto-1301017778-170667a.jpg": "/static/media/istockphoto-1301017778-170667a.213f6a162c56b4d4578c.jpg",
+    "static/media/mt-1596_home_slide-01.jpg": "/static/media/mt-1596_home_slide-01.a1383e7bae201f43b59c.jpg",
+    "static/media/product-5.png": "/static/media/product-5.8a9ee0e0e02a3f7d393f.png",
+    "static/media/bg-wine.jpg": "/static/media/bg-wine.312f7dc5505c2fa1d954.jpg",
+    "static/media/navbharat-times.jpg": "/static/media/navbharat-times.a71c20a68a8eaf39f104.jpg",
+    "static/media/109076-cypruswine-Cyprus-Maratheftiko-Shiraz-wine-748x549.jpg": "/static/media/109076-cypruswine-Cyprus-Maratheftiko-Shiraz-wine-748x549.12c42bbaf06ad53027c8.jpg",
+    "static/media/JP-wine-under-250-_255x255_cd3b2cb5-b368-408a-b28b-4ba802f9ee27.webp": "/static/media/JP-wine-under-250-_255x255_cd3b2cb5-b368-408a-b28b-4ba802f9ee27.e7d2daa5a4978cc3fca2.webp",
+    "static/media/763072.png": "/static/media/763072.3d0407483e374dc2a053.png",
+    "index.html": "/index.html",
+    "main.cbcf745e.css.map": "/static/css/main.cbcf745e.css.map",
+    "main.d0b4e3c9.js.map": "/static/js/main.d0b4e3c9.js.map",
+    "787.3a3bb09d.chunk.js.map": "/static/js/787.3a3bb09d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbcf745e.css",
+    "static/js/main.d0b4e3c9.js"
+  ]
+}
