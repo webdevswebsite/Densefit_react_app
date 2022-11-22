@@ -1,10 +1,8 @@
 import React, {useEffect, useState} from "react";
-import { BsArrowUpCircleFill, BsPerson, BsSearch } from "react-icons/bs";
+import { BsPerson } from "react-icons/bs";
 import { AiFillDelete } from "react-icons/ai"
 import { FaShoppingBasket, FaRegWindowClose } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import logo from "../src/images/logo.png";
-import logomobiletop from "../src/images/logomb.png";
 import cartimgn from "../src/images/product-5.png";
 import cartimgm from "../src/images/product-3.png";
 import $ from 'jquery';
@@ -49,8 +47,7 @@ function Header() {
                         <nav className="navbar navbar-expand-lg navbar-light align-items-center justify-content-between">
                             <NavLink to="/" href="#">
                                 Densefit
-                                {/* <img src={logo} className="logo-main" alt="logo"/>
-                                <img src={logomobiletop} className="logo-mobile" alt="logo"/> */}
+                                
                             </NavLink>
                             {/* mobile header starts here------------------------ */}
                             <div className="d-block mbile-checkout ms-auto d-lg-none">

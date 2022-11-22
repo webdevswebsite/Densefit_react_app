@@ -11,7 +11,6 @@ import Blog from './Blog';
 import Blogdetails from './Blogdetails';
 import Faq from './Faq';
 import Contact from './Contact';
-import Footer from './Footer';
 import Cart from './Cart';
 import Checkout from './Checkout';
 import {BrowserRouter as Router , Routes, Route} from "react-router-dom";
