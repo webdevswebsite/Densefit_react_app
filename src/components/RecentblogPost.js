@@ -4,7 +4,7 @@ import recentpost from "./RecentblogApi";
 
 function RecentblogPost () {
     const [ workData , setworkData] =useState(recentpost);
-    console.log(workData);
+    console.log(workData, setworkData);
     return (
         <>
             <div className="recent-blog-part">
@@ -12,7 +12,7 @@ function RecentblogPost () {
                 <div className="recent-all-post">
                 {
                     workData.map((curElem) => {
-                     const { id, repostimg, reposttitel, repostlink } = curElem;
+                     const { repostimg, reposttitel, repostlink } = curElem;
                      return (
                          <>
                          <div className="comon-recent d-flex justify-content-between">

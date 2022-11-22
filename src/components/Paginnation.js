@@ -8,7 +8,7 @@ function Paginnation({ showPerPage, onchangepagination, total }) {
     useEffect(() => {
         const value = showPerPage * counter;
         onchangepagination(value - showPerPage, value);
-    }, [ counter ]);
+    }, [ value ]);
     const onclickButton = (type) => {
         if (type === "pre") {
             if (counter === 1) {
@@ -37,7 +37,7 @@ function Paginnation({ showPerPage, onchangepagination, total }) {
                     {
                         new Array(numberOfButtons).fill("").map((el, index) => (
                             <li className={`page-items ${index + 1 === counter ? "active" : null}`}>
-                                <a className="page-link" onClick={() => setCounter(counter)}> {index + 1} </a>
+                                <button style={{ border: 'none', background: "none" }} className="page-link" onClick={() => setCounter(counter)}> {index + 1} </button>
                             </li>
                         ))
                     }

@@ -79,7 +79,7 @@ function ProductsLeftCarasoule() {
           </div>
 
           <div id="thumbCarousel" className="d-flex justify-content-between">
-            <div data-bs-target="#myCarousel" data-bs-slide-to="0" className="thumb active"><img src={imga} /></div>
+            <div data-bs-target="#myCarousel" data-bs-slide-to="0" className="thumb active"><img src={imga} alt='img'/></div>
             <div data-bs-target="#myCarousel" data-bs-slide-to="1" className="thumb"><img src={imgb} alt="img" /></div>
             <div data-bs-target="#myCarousel" data-bs-slide-to="2" className="thumb"><img src={imgc} alt="img" /></div>
             <div data-bs-target="#myCarousel" data-bs-slide-to="3" className="thumb"><img src={imgd} alt="img" /></div>

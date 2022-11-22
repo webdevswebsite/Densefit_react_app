@@ -3,7 +3,7 @@ import ourproductiondetails from "./AboutpageFoursectionApi";
 
 function AboutpageSectionfour(){
     const [ workData , setworkData] =useState(ourproductiondetails);
-    console.log(workData);
+    console.log(workData, setworkData);
       return(
           <>
             <div className="About-client-sec py-5">
