@@ -73,10 +73,10 @@ function CheckoutPayright() {
                             currency: "USD",
                             tx_ref: new Date().toISOString(),
                             customer: {
-                                email: 'test@gmail.com',
+                                email: localStorage.getItem("email"),
                             },
                             customizations: {
-                                title: "Densefit",
+                                title: "DENSEFIT",
                             },
                             callback: async function () {
                                 alert('Payment successful...We will reach out to you for further details')
