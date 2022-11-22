@@ -45,9 +45,8 @@ function Header() {
                 <div className="mn-head">
                     <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light align-items-center justify-content-between">
-                            <NavLink to="/" href="#">
-                                Densefit
-                                
+                            <NavLink style={{color:'#fff', fontWeight:'900'}} to="/" href="#">
+                                DENSEFIT            
                             </NavLink>
                             {/* mobile header starts here------------------------ */}
                             <div className="d-block mbile-checkout ms-auto d-lg-none">

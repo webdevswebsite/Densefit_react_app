@@ -247,104 +247,13 @@ function Footer() {
         </div>
         <div className="offcanvas-body menu-modal">
           <NavLink to="/">
-            <h1>Densefit</h1>
+            <h1>DENSEFIT</h1>
             {/* <img src={logomobileslide} alt="logom"/> */}
           </NavLink>
 
           <ul className="list-unstyled mt-4">
             <li data-bs-dismiss="offcanvas"><NavLink className="dropdown-item" to="/">Home </NavLink> </li>
-            {/* <li data-bs-dismiss="offcanvas"><NavLink  className="dropdown-item" to="/about">About</NavLink> </li>
-              <li data-bs-dismiss="offcanvas"><NavLink  className="dropdown-item" to="/blog">Blog </NavLink> </li> */}
-
-            {/* <div className="dropdown postion-relative">
-                  <button className="btn dropdown-toggle mega-btn text-start col-12" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Shop
-                  </button>
-                  <ul className="dropdown-menu mobile-mega-menu col-12" aria-labelledby="dropdownMenuButton1">
-                    <li>
-                        <div className="comon-menu-div">
-                          <h5 className="mb-3"> Red Wine</h5>
-                          
-                          <ul className="list-unstyled">
-                          <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Cabernet Shira </NavLink> </li>
-                          <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Big Banyan Merlot </NavLink> </li>
-                          <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Barrique Reserve Shiraz </NavLink> </li>
-                          <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> La Reserve </NavLink> </li>
-                          <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Reserve Tempranillo </NavLink> </li>
-                          </ul>
-                      </div>
-                    </li>
-
-                    <li>
-                        <div className="comon-menu-div mt-3">
-                          <h5 className="mb-3"> Sparkling Wine </h5>
-                         
-                          <ul className="list-unstyled">
-                          <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Asti Spumante </NavLink> </li>
-                          <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Franciacorta </NavLink> </li>
-                          <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> cremant dalsace </NavLink> </li>
-                          <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Clairette de Die </NavLink> </li>
-                         
-                          </ul>
-                      </div>
-                    </li>
-
-                    <li>
-                        <div className="comon-menu-div mt-3">
-                          <h5 className="mb-3"> Dessert Wine </h5>
-                         
-                          <ul className="list-unstyled">
-                                <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Calafuria </NavLink> </li>
-                                <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Bralette </NavLink> </li>
-                                <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Bandeau </NavLink> </li>
-                                <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> feugiat congue </NavLink> </li>
-
-                          </ul>
-                      </div>
-                    </li>
-
-                    <li>
-                        <div className="comon-menu-div mt-3">
-                          <h5 className="mb-3"> Rose Wine </h5>
-                         
-                          <ul className="list-unstyled">
-                            <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Rosé Imperial Champagne </NavLink> </li>
-                            <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Hampton Water Rose </NavLink> </li>
-                            <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Miraval Provence Rosé </NavLink> </li>
-                            <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> lacinia odio </NavLink> </li>
-
-                                
-
-                          </ul>
-                      </div>
-                    </li>
-
-                    <li>
-                        <div className="comon-menu-div mt-3">
-                          <h5 className="mb-3"> White Wine </h5>
-                         
-                          <ul className="list-unstyled">
-                             
-                             <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Moscato </NavLink> </li>
-                            <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Sauvignon Blanc </NavLink> </li>
-                            <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Waterstone Bridge </NavLink> </li>
-                            <li data-bs-dismiss="offcanvas"> <NavLink to="/shop"> Classic White </NavLink> </li>
-
-                                
-
-                          </ul>
-                      </div>
-                    </li>
-
-                   
-                  </ul>
-              </div> */}
-
-            {/* <li data-bs-dismiss="offcanvas"><NavLink   className="dropdown-item" to="/faq">Faq </NavLink> </li>
-      
-
-              <li data-bs-dismiss="offcanvas"><NavLink  className="dropdown-item" to="/contact">Contact </NavLink> </li> */}
-
+            
           </ul>
 
         </div>
