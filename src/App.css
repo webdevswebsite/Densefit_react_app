@@ -956,6 +956,7 @@ footer{
   
   /* Slider */
   .slider {
+
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -1003,6 +1004,7 @@ footer{
 	flex-wrap: wrap;
   }
   .slider-content {
+	  color:red;
 	width: 637px;
 	padding-right: 100px;
 	margin-left: auto;
@@ -1025,7 +1027,8 @@ footer{
 	
   }
   .slider h2 span{
-	color: #fff;
+	  color: #d00035;
+	/* color: #fff; */
   }
   
   .slider h4 {
@@ -1040,7 +1043,8 @@ footer{
 	transform: translateX(500px);
   }
   .slider-content p{
-	  color: #fff;
+	  color: #d00035;
+	  /* color: #fff; */
 	  font-family: 'Quicksand', sans-serif;
 	  position: relative;
 	  z-index: 2;

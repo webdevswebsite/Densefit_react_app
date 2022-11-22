@@ -46,8 +46,8 @@ function Banner(){
                 <div className="container">
                 <div className="col-lg-6 ms-auto">
                     <div className="slider-content">
-                        <h4> Browse </h4>
-                        <h2>& discover 
+                        {/* <h4> Browse </h4> */}
+                        <h2>Discover 
                         <span className="d-block"> Pupolar products </span>  </h2>
                         <p> Our onlinestore also offers you the best beauty products from world-wide known brands. Anything related to health and beauty, cosmetics and fragrances can be found at our online store.</p>
                         <NavLink to="/bestsellinghome" className="buy-now-btn" name="button"> <FaShoppingCart/> Shop Now </NavLink>
