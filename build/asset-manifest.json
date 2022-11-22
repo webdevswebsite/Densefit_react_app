@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cbcf745e.css",
-    "main.js": "/static/js/main.ca24c800.js",
+    "main.js": "/static/js/main.5dde7c73.js",
     "static/js/787.3a3bb09d.chunk.js": "/static/js/787.3a3bb09d.chunk.js",
     "static/media/banner2-1.jpg": "/static/media/banner2-1.8e80429df667f0ea34e6.jpg",
     "static/media/banner2-3.jpg": "/static/media/banner2-3.ce820b2b492f7777ff2d.jpg",
@@ -28,14 +28,13 @@
     "static/media/navbharat-times.jpg": "/static/media/navbharat-times.a71c20a68a8eaf39f104.jpg",
     "static/media/109076-cypruswine-Cyprus-Maratheftiko-Shiraz-wine-748x549.jpg": "/static/media/109076-cypruswine-Cyprus-Maratheftiko-Shiraz-wine-748x549.12c42bbaf06ad53027c8.jpg",
     "static/media/JP-wine-under-250-_255x255_cd3b2cb5-b368-408a-b28b-4ba802f9ee27.webp": "/static/media/JP-wine-under-250-_255x255_cd3b2cb5-b368-408a-b28b-4ba802f9ee27.e7d2daa5a4978cc3fca2.webp",
-    "static/media/763072.png": "/static/media/763072.3d0407483e374dc2a053.png",
     "index.html": "/index.html",
     "main.cbcf745e.css.map": "/static/css/main.cbcf745e.css.map",
-    "main.ca24c800.js.map": "/static/js/main.ca24c800.js.map",
+    "main.5dde7c73.js.map": "/static/js/main.5dde7c73.js.map",
     "787.3a3bb09d.chunk.js.map": "/static/js/787.3a3bb09d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cbcf745e.css",
-    "static/js/main.ca24c800.js"
+    "static/js/main.5dde7c73.js"
   ]
 }
