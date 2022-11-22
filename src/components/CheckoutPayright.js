@@ -15,6 +15,12 @@ function CheckoutPayright() {
         setTotal(cart.reduce((acc, curr) => acc + Number(curr.price), 0));
     }, [ cart ])
 
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://checkout.flutterwave.com/v3.js";
+        document.getElementsByTagName("head")[ 0 ].appendChild(script);
+    }, []);
+
     return (
         <>
             <div className="checkout-right mt-5 mt-lg-0">
@@ -43,7 +49,7 @@ function CheckoutPayright() {
 
                             </tbody>
                         ))}
-                    </table> 
+                    </table>
                 </div>
                 <div className="oder-right-details-new">
 
@@ -58,7 +64,26 @@ function CheckoutPayright() {
                 </div>
             </div>
             <form>
-            <NavLink to="/checkout" className="btn paybn mt-3 w-100"> Payment now </NavLink>
+                <NavLink to="/checkout" onClick={
+                    (e) => {
+                        e.preventDefault()
+                        return window.FlutterwaveCheckout({
+                            public_key: "FLWPUBK-00f1a8bfd678ad383f650cd6cccd643b-X",
+                            amount: total,
+                            currency: "USD",
+                            tx_ref: new Date().toISOString(),
+                            customer: {
+                                email: 'test@gmail.com',
+                            },
+                            customizations: {
+                                title: "Densefit",
+                            },
+                            callback: async function () {
+                                alert('Payment successful...We will reach out to you for further details')
+                            },
+                        });
+                    }
+                } className="btn paybn mt-3 w-100"> Payment now </NavLink>
             </form>
         </>
     );
