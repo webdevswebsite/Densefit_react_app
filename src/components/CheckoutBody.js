@@ -1,5 +1,4 @@
 import React from "react";
-import BillingDetais from "./BillingDetais";
 import Paymentmethod from "./Paymentmethod";
 
 import CheckoutPayright from "./CheckoutPayright";

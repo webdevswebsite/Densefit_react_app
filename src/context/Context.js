@@ -13,7 +13,7 @@ const Cart = createContext()
 
 const Context = ({ children }) => {
     const [ products, setProducts ] = useState(Bestsellproducts);
-
+    console.log(setProducts)
     const [ state, dispatch ] = useReducer(cartReducer, {
         products: products,
         cart:[ ]

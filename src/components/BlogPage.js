@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AllBlogpost from "./BlogpostApi";
 
-import { FaAngleDoubleRight , FaUser , FaTags } from "react-icons/fa";
+import { FaUser , FaTags } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 function BlogPage() {
     
     const [ posts , setworkData] =useState(AllBlogpost);
-    console.log(posts);
+    console.log(posts, setworkData);
 
     return(
         <>
@@ -22,7 +22,7 @@ function BlogPage() {
                       return(
                           <>
                             <div className="col">
-                                <div className="item">
+                                <div className="item" key={id}>
                                         <div className="comon-news-part">
                                             <div className="comon-pic-news">
                                                 <figure className="position-relative">

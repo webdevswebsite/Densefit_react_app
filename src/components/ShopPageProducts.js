@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import allproductsdetails from "./Allproducts";
-import { FaList , FaAngleRight,FaThList, FaPlus, FaShoppingBasket, FaExternalLinkAlt,  FaDollarSign} from "react-icons/fa";
-import { BsFillGridFill } from "react-icons/bs";
+import { FaShoppingBasket, FaExternalLinkAlt,  FaDollarSign} from "react-icons/fa";
 import Paginnation from "./Paginnation";
 import { NavLink } from "react-router-dom";
 import Aos from "aos";
@@ -13,13 +12,14 @@ function ShopPageProducts(){
     const [ items , setItems] =useState(allproductsdetails);
     const filterItems = (cateItem) => {
         const updatedItems = allproductsdetails.filter((curElem) => {
-               return curElem.category == cateItem;
+               return curElem.category === cateItem;
 
         }); 
 
         setItems(updatedItems);
     }
-    const [ showPerPgae , setShowPerPage] = useState(8);
+    const [ showPerPgae, setShowPerPage ] = useState(8);
+    console.log(setShowPerPage)
     const [ pagination , setPagination] = useState({
         start:0,
         end: showPerPgae,

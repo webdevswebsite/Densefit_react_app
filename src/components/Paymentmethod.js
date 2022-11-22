@@ -1,5 +1,4 @@
 import React from "react";
-import { FaExclamationCircle } from "react-icons/fa";
 import $ from 'jquery';
 
 

@@ -46,13 +46,13 @@ function OfferHome(){
                             </div>
                         </div>
                         <div className="big-div-offer mb-4 mb-lg-0 mt-4" data-aos="fade-up">
-                            <a href="#" className="comon-offer">
+                                <button style={{ border: 'none', background: "none" }} href="#" className="comon-offer">
                             <figure>
                                 <img src={landscapepictwo} alt="bg"/>
                             </figure>
                             <h5 className="col-lg-6 ms-md-auto"> <span className="d-block">  10% Off</span>
                             on all weekend sale </h5>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     

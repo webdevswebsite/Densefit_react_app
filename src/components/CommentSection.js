@@ -4,7 +4,7 @@ import Allcomments from "./CommentdetailsApi";
 
 function CommentSection() {
     const [ workData , setworkData] =useState(Allcomments);
-    console.log(workData);
+    console.log(workData, setworkData);
     return(
         <>
           <div className="comment-sec-part">
@@ -12,7 +12,7 @@ function CommentSection() {
              <div className="all-cm-div mt-4">
                {
                    workData.map((curElem) => {
-                     const { id, userimg, usernames, date, description} = curElem;
+                     const { userimg, usernames, date, description} = curElem;
                      return(
                          <>
                          <div className="comon-comnet-sec d-lg-flex">

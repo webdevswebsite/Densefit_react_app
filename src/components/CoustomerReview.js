@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import { FaStar } from "react-icons/fa";
 import AllReviw from "./CustomerrevieApi";
 
 function CoustomerReview(){
@@ -10,7 +9,7 @@ function CoustomerReview(){
 
         {
             workData.map((curElem) =>{
-                const { id,images, name, decription, date, rating} = curElem;
+                const { images, name, decription, date } = curElem;
                 return(
                     <>
                     <div className="comment-user-div">

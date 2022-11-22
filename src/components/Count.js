@@ -1,5 +1,5 @@
 import React from "react";
-import { FaRegTimesCircle , FaPlus , FaMinus } from "react-icons/fa";
+import { FaPlus , FaMinus } from "react-icons/fa";
 import $ from 'jquery';
 
 class Count extends React.Component {

@@ -20,7 +20,7 @@ function BlogdetailsLeftdiv() {
                    <li className="d-flex align-items-center"> <FaRegCalendarAlt/> Oct 12, 2021</li>
                    <li className="d-flex align-items-center"> <FaRegComment/> <span> 2 </span> Oct 12, 2021</li>
                 </ul>
-                <a id="" className="btn share-bn"> <FaShareAlt/> Share </a>
+                    <button style={{ border: 'none', background: "none" }} id="" className="btn share-bn"> <FaShareAlt/> Share </button>
              </div>
              <hr/>
 

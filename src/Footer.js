@@ -189,7 +189,7 @@ function Footer() {
                 </div>
 
                 <p class="text-center  mt-3"> Do not have an account?
-                  <button style={{ border: 'none', background: "none" }} href="" data-bs-toggle="modal" class="regster-bn" data-bs-target="#loginModal" data-bs-dismiss="modal"> Login </button>  </p>
+                  <button style={{ border: 'none', background: "none" }} data-bs-toggle="modal" class="regster-bn" data-bs-target="#loginModal" data-bs-dismiss="modal"> Login </button>  </p>
               </div>
             </div>
 

@@ -6,7 +6,7 @@ import Teammember from "./TeamApi";
 
 function AboutpageSectionfive(){
     const [ workData , setworkData] =useState(Teammember);
-    console.log(workData);
+    console.log(workData, setworkData);
     const options = {
         margin: 30,
         responsiveClass: true,
@@ -48,7 +48,7 @@ function AboutpageSectionfive(){
                                 const { id, images, name, jobpostion} = curElem;
                                 return(
                                     <>
-                                    <div className="team-item text-center  m-auto">
+                                    <div className="team-item text-center  m-auto" key={id}>
                                         <figure>
                                            <img src={images} alt={name}/>
                                         </figure>

@@ -7,6 +7,7 @@ function CheckoutPayright() {
         state: { cart },
         dispatch,
     } = CartState();
+    console.log(dispatch)
 
     const [ total, setTotal ] = useState()
 

@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import Wineimage from "../images/763072.png";
 import ourproductiondetails from "./AboutpageFoursectionApi";
 
 function AboutpageSectionfour(){
@@ -17,7 +16,7 @@ function AboutpageSectionfour(){
                       const { id, img, title, number} =curElem;
                       return(
                           <>
-                          <div className="col">
+                          <div className="col" key={id}>
                                 <div className="comon-about text-center">
                                     <figure className="comon-about-iocn">
                                         <img src={img} alt="wine"/>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import RecentblogPost from "./RecentblogPost";
 import { NavLink } from "react-router-dom";
 import { FaRegCaretSquareRight } from "react-icons/fa";

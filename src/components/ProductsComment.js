@@ -1,7 +1,4 @@
-import React, {useState} from "react";
-import { NavLink } from "react-router-dom";
-import CoustomerReview from "./CoustomerReview";
-import { FaShoppingBasket, FaExternalLinkAlt } from "react-icons/fa";
+import React from "react";
 
 function ProductsComment(){
     return (

@@ -1,7 +1,5 @@
 import React, {useEffect} from "react";
-import ShopfilterSection from "./ShopfilterSection";
 import ShopPageRight from "./ShopPageRight";
-import { NavLink } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

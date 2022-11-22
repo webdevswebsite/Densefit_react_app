@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 function Whychoose(){
     const [ workData, setworkData ] =useState (whychosedetails);
-    console.log(workData)
+    console.log(workData, setworkData)
 
     useEffect(() => {
         Aos.init({
@@ -25,10 +25,10 @@ function Whychoose(){
                    <div className="row row-cols-1 row-cols-md-2 gy-4 gy-lg-0 gx-lg-4 row-cols-md-2 row-cols-lg-4">
                    {
                        workData.map((curElem)=>{
-                           const{ id, img, title, description } =curElem;
+                           const{ id, img, title } =curElem;
                            return(
                                 <>
-                                   <div className="col" data-aos="fade-down">
+                                   <div className="col" data-aos="fade-down" key={id}>
 
                                         <div className="comon-our-text text-center">
                                             <figure>

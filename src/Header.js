@@ -74,7 +74,7 @@ function Header() {
                                                         <h6> $ $00:00</h6>
 
                                                     </div>
-                                                    <a className="close-crt"> <FaRegWindowClose /> </a>
+                                                    <button style={{ border: 'none', background: "none" }} className="close-crt"> <FaRegWindowClose /> </button>
                                                 </div>
                                             </div>
                                             <div className="comon-cart-ps">
@@ -91,7 +91,7 @@ function Header() {
                                                         <h6> $00:00 </h6>
 
                                                     </div>
-                                                    <a className="close-crt"> <FaRegWindowClose /> </a>
+                                                    <button style={{ border: 'none', background: "none" }} className="close-crt"> <FaRegWindowClose /> </button>
 
                                                 </div>
                                             </div>
@@ -197,7 +197,7 @@ function Header() {
                                             </ul>
                                             <span className="cat-count"> {cart.length} </span>
                                         </div>
-                                        <a data-bs-toggle="modal" data-bs-target="#loginModal" className="btn com-link login-top"> <BsPerson /> </a>
+                                        <button style={{ border: 'none', background: "none" }} data-bs-toggle="modal" data-bs-target="#loginModal" className="btn com-link login-top"> <BsPerson /> </button>
 
                                     </li>
 
