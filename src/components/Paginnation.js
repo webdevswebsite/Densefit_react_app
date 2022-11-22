@@ -8,7 +8,7 @@ function Paginnation({ showPerPage, onchangepagination, total }) {
     useEffect(() => {
         const value = showPerPage * counter;
         onchangepagination(value - showPerPage, value);
-    }, []);
+    }, [ counter, onchangepagination, showPerPage ]);
     const onclickButton = (type) => {
         if (type === "pre") {
             if (counter === 1) {
