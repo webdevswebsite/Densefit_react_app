@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
-// import Bestsellproducts from "./BestsellingApi";
+
 import { FaShoppingBasket, FaTimesCircle } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -72,8 +71,8 @@ function BestsellingHome() {
                                                     </div>
 
                                                     <div className="ps-details text-center">
-                                                        <NavLink to={link} className="cate-text d-table text-center m-auto">{cate}</NavLink>
-                                                        <NavLink to={link} className="products-titel m-auto"> {title} </NavLink>
+                                                        <div to={link} className="cate-text d-table text-center m-auto">{cate}</div>
+                                                        <div to={link} className="products-titel m-auto"> {title} </div>
                                                         <div className="d-flex align-items-center justify-content-center">
                                                             <h5 className="old-pice text-decoration-line-through"> {oldprice}</h5> <h5 class="price-text ms-3"> ${price} </h5>
                                                         </div>

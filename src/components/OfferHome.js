@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-import { NavLink } from "react-router-dom";
 import smallpicone from "../images/109076-cypruswine-Cyprus-Maratheftiko-Shiraz-wine-748x549.jpg";
 import smallpictwo from "../images/navbharat-times.jpg";
 import landscapepictwo from "../images/istockphoto-1183406603-170667a.jpg";
@@ -27,22 +26,22 @@ function OfferHome(){
                     <div className="col-lg-8">
                         <div className="row row-cols-1 row-cols-md-2 gy-4 gy-lg-0 gx-lg-4 justify-content-between align-items-center">
                             <div className="col" data-aos="fade-up">
-                                <NavLink to="/shop" className="comon-offer">
+                                <div className="comon-offer">
                                     <figure>
                                         <img src={smallpicone} alt="bg"/>
                                     </figure>
                                     <h5 className="col-lg-11 m-auto"> <span className="d-block"> 20% Off</span>
                                     on all weekend sale </h5>
-                                </NavLink>
+                                </div>
                             </div>
                             <div className="col" data-aos="fade-down">
-                                <NavLink to="/shop" className="comon-offer">
+                                <div  className="comon-offer">
                                     <figure>
                                         <img src={smallpictwo} alt="bg"/>
                                     </figure>
                                     <h5 className="col-lg-11 m-auto"> <span className="d-block">  Free Shipping  </span>
                                     on order over 100,000 naira  </h5>
-                                </NavLink>
+                                </div>
                             </div>
                         </div>
                         <div className="big-div-offer mb-4 mb-lg-0 mt-4" data-aos="fade-up">
