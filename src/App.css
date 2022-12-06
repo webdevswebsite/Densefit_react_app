@@ -956,13 +956,12 @@ footer{
   
   /* Slider */
   .slider {
-
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
-	opacity: 1;
+	opacity: 99;
 	z-index: 0;
 	display: flex;
 	flex-direction: row;
@@ -1004,7 +1003,7 @@ footer{
 	flex-wrap: wrap;
   }
   .slider-content {
-	  color:red;
+	  color:black;
 	width: 637px;
 	padding-right: 100px;
 	margin-left: auto;

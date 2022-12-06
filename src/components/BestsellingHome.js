@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { FaShoppingBasket, FaTimesCircle } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { CartState } from "../context/Context";
+import { CartState, CurrencyState } from "../context/Context";
 
 
 function BestsellingHome() {
@@ -11,6 +11,9 @@ function BestsellingHome() {
     const { state: { products, cart },
         dispatch,
     } = CartState()
+    const {
+        state: { currency, rate },
+    } = CurrencyState();
 
     console.log(cart);
 
@@ -21,7 +24,6 @@ function BestsellingHome() {
             delay: 0,
             once: true,
             duration: 800,
-
         });
     });
 
@@ -36,6 +38,8 @@ function BestsellingHome() {
                             <div className="row g-md-5 mt-5 row-cols-1 row-cols-md-2 row-cols-lg-4 gy-2 gy-lg-0">
                                 {products.map((prod) => {
                                     const { id, img, title, offer, cate, oldprice, price, link } = prod;
+                                    let priceToNum = parseInt(price)
+                                    console.log(price, 'this is price', rate, 'rate')
                                     return (
                                         <>
                                             <div className="col " data-aos="fade-down" id={id}>
@@ -66,7 +70,7 @@ function BestsellingHome() {
                                                                         }
                                                                         }> <FaShoppingBasket /> </button>
                                                                 )}
-                                                            
+
                                                         </div>
                                                     </div>
 
@@ -74,7 +78,13 @@ function BestsellingHome() {
                                                         <div to={link} className="cate-text d-table text-center m-auto">{cate}</div>
                                                         <div to={link} className="products-titel m-auto"> {title} </div>
                                                         <div className="d-flex align-items-center justify-content-center">
-                                                            <h5 className="old-pice text-decoration-line-through"> {oldprice}</h5> <h5 class="price-text ms-3"> ${price} </h5>
+                                                            <h5 className="old-pice text-decoration-line-through">
+                                                                {oldprice}</h5>
+                                                            <h5 class="price-text ms-3">
+                                                                {currency}
+                                                                {currency !== '$' ? priceToNum * rate : price}
+                                                            </h5>
+
                                                         </div>
 
                                                     </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { CartState } from "../context/Context";
+import { CartState, CurrencyState } from "../context/Context";
 
 function CheckoutPayright() {
     const {
@@ -8,6 +8,8 @@ function CheckoutPayright() {
         dispatch,
     } = CartState();
     console.log(dispatch)
+
+    const { state: { currency, rate } } = CurrencyState();
 
     const [ total, setTotal ] = useState()
 
@@ -36,19 +38,22 @@ function CheckoutPayright() {
 
                             </tr>
                         </thead>
-                        {cart.map((prod) => (
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        {prod.title}
-                                    </td>
-                                    <td>({prod.qty}</td>
-                                    <td>{prod.price}</td>
+                        {cart.map((prod) => {
+                            let priceToNum = parseInt(prod.price)
+                            return (
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            {prod.title}
+                                        </td>
+                                        <td>{prod.qty}</td>
+                                        <td>{currency}{currency !== '$' ? priceToNum * rate : priceToNum}</td>
 
-                                </tr>
+                                    </tr>
 
-                            </tbody>
-                        ))}
+                                </tbody>
+                            )
+                        })}
                     </table>
                 </div>
                 <div className="oder-right-details-new">
@@ -56,7 +61,8 @@ function CheckoutPayright() {
                     <hr />
                     <div className="price-sec-order">
                         <div className="total-price p-0">
-                            <p className="discount-am mb-lg-0"> Total Amount: <span> $ {total} </span></p>
+                            <p className="discount-am mb-lg-0"> Total Amount: <span>
+                                {currency}{currency !== '$' ? total * rate : total} </span></p>
                         </div>
 
                     </div>
@@ -69,8 +75,8 @@ function CheckoutPayright() {
                         e.preventDefault()
                         return window.FlutterwaveCheckout({
                             public_key: "FLWPUBK-00f1a8bfd678ad383f650cd6cccd643b-X",
-                            amount: total,
-                            currency: "USD",
+                            amount: currency !== '$' ? total * rate : total,
+                            currency: localStorage.getItem('currency') || 'USD',
                             tx_ref: new Date().toISOString(),
                             customer: {
                                 email: localStorage.getItem("email"),
