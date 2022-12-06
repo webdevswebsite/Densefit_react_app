@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f315a1a.css",
-    "main.js": "/static/js/main.2431a618.js",
+    "main.css": "/static/css/main.507ce6e5.css",
+    "main.js": "/static/js/main.6b61150c.js",
     "static/js/787.3a3bb09d.chunk.js": "/static/js/787.3a3bb09d.chunk.js",
     "static/media/banner2-3.jpg": "/static/media/banner2-3.ce820b2b492f7777ff2d.jpg",
     "static/media/bg-wine-shop.jpg": "/static/media/bg-wine-shop.9f1cc4082b6045b89360.jpg",
@@ -27,12 +27,12 @@
     "static/media/109076-cypruswine-Cyprus-Maratheftiko-Shiraz-wine-748x549.jpg": "/static/media/109076-cypruswine-Cyprus-Maratheftiko-Shiraz-wine-748x549.12c42bbaf06ad53027c8.jpg",
     "static/media/JP-wine-under-250-_255x255_cd3b2cb5-b368-408a-b28b-4ba802f9ee27.webp": "/static/media/JP-wine-under-250-_255x255_cd3b2cb5-b368-408a-b28b-4ba802f9ee27.e7d2daa5a4978cc3fca2.webp",
     "index.html": "/index.html",
-    "main.5f315a1a.css.map": "/static/css/main.5f315a1a.css.map",
-    "main.2431a618.js.map": "/static/js/main.2431a618.js.map",
+    "main.507ce6e5.css.map": "/static/css/main.507ce6e5.css.map",
+    "main.6b61150c.js.map": "/static/js/main.6b61150c.js.map",
     "787.3a3bb09d.chunk.js.map": "/static/js/787.3a3bb09d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f315a1a.css",
-    "static/js/main.2431a618.js"
+    "static/css/main.507ce6e5.css",
+    "static/js/main.6b61150c.js"
   ]
 }
