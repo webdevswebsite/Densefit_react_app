@@ -22,16 +22,16 @@ $(document).ready(function () {
 
 });
 
-//API REQUEST PROPERTIES
-var myHeaders = new Headers();
-// var key = 'bKOwUlmw2tXrEhTMCZIGi7K3KvDZiv5J'
-var key = 'GKf58yqF3usBTj1HMEdcMCifxFYflQuZ'
-myHeaders.append("apikey", key)
-var requestOptions = {
-    method: 'GET',
-    redirect: 'follow',
-    headers: myHeaders
-};
+// //API REQUEST PROPERTIES
+// var myHeaders = new Headers();
+// // var key = 'bKOwUlmw2tXrEhTMCZIGi7K3KvDZiv5J'
+// var key = 'GKf58yqF3usBTj1HMEdcMCifxFYflQuZ'
+// myHeaders.append("apikey", key)
+// var requestOptions = {
+//     method: 'GET',
+//     redirect: 'follow',
+//     headers: myHeaders
+// };
 
 function Header() {
 
@@ -68,6 +68,8 @@ function Header() {
 
 
     useEffect(() => {
+        console.log(rate, 'rate in header')
+
         setTotal(cart.reduce((acc, curr) => acc + Number(curr.price), 0));
     }, [ cart ])
 
@@ -75,31 +77,30 @@ function Header() {
         // on page reload activeCurency clears the state, prevent it from updating localstorage
         if (activeCurrency === undefined) return
 
-        console.log(Converter(), 'conv');
         //only update local storage when activeCurrency has a value
         window.localStorage.setItem('currency', activeCurrency || 'USD');
     }, [ activeCurrency ]);
 
     // console.log(cart)
 
-    async function Converter(amount) {
-        // let res = await fetch(`https://api.apilayer.com/exchangerates_data/convert?to=NGN&from=USD&amount=${amount}`, requestOptions)
-        let res = await fetch(`https://exchange-rates.abstractapi.com/v1/convert/?api_key=90c11f104f7d4dd8bf1a0b8a70f7440c&base=USD&target=NGN&base_amount=${amount}`, requestOptions)
-            .then(response =>
-                response.json()
-            )
-            .then((data) => {
-                console.log(data, 'data');
-                if (data) {
-                    // setConversion(data.result)
-                    return data
-                }
-            })
-            .catch((error) => {
-                console.error(error);
-            });
-        return res;
-    }
+    // async function Converter(amount) {
+    //     // let res = await fetch(`https://api.apilayer.com/exchangerates_data/convert?to=NGN&from=USD&amount=${amount}`, requestOptions)
+    //     let res = await fetch(`https://exchange-rates.abstractapi.com/v1/convert/?api_key=90c11f104f7d4dd8bf1a0b8a70f7440c&base=USD&target=NGN&base_amount=${amount}`, requestOptions)
+    //         .then(response =>
+    //             response.json()
+    //         )
+    //         .then((data) => {
+    //             console.log(data, 'data');
+    //             if (data) {
+    //                 // setConversion(data.result)
+    //                 return data
+    //             }
+    //         })
+    //         .catch((error) => {
+    //             console.error(error);
+    //         });
+    //     return res;
+    // }
 
 
     return (
@@ -188,10 +189,10 @@ function Header() {
 
                                         <li>
                                             <div className="sub-total-products d-flex align-items-center justify-content-between">
-                                                <p className="discount-am mb-lg-0"> Total Amount: <span> {currency +
-                                                    //  total
-                                                    (currency !== '$' ? total * rate : total)
-                                                } </span></p>
+                                                <p className="discount-am mb-lg-0"> Total Amount: <span>
+                                                    {currency +
+                                                        (currency !== '$' ? total * rate : total)}
+                                                </span></p>
                                             </div>
                                         </li>
                                         <li>

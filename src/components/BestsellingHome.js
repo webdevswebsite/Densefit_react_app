@@ -11,6 +11,7 @@ function BestsellingHome() {
     const { state: { products, cart },
         dispatch,
     } = CartState()
+    
     const {
         state: { currency, rate },
     } = CurrencyState();
@@ -39,7 +40,6 @@ function BestsellingHome() {
                                 {products.map((prod) => {
                                     const { id, img, title, offer, cate, oldprice, price, link } = prod;
                                     let priceToNum = parseInt(price)
-                                    console.log(price, 'this is price', rate, 'rate')
                                     return (
                                         <>
                                             <div className="col " data-aos="fade-down" id={id}>

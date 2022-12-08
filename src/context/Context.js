@@ -2,6 +2,7 @@ import { createContext, useReducer, useContext } from 'react';
 import { cartReducer, currencyReducer } from './Reducers';
 import Bestsellproducts from '../components/BestsellingApi';
 import { useState } from 'react';
+// import { exchangeRates } from 'exchange-rates-api';
 
 
 const Cart = createContext()
@@ -17,7 +18,8 @@ export const CurrencyContext = ({ children }) => {
     const [ state, dispatch ] = useReducer(currencyReducer, {
         currency: currency,
         currencies: [ "USD", "NGN" ],
-        rate: 444
+        rate: 444,
+        // rate: (async () => await exchangeRates().latest().base('USD').fetch())()
     })
 
     // return a curency provider, use to wrap the whole app to provide state for all child components
@@ -35,6 +37,7 @@ export const CurrencyContext = ({ children }) => {
 const Context = ({ children }) => {
     const [ products, setProducts ] = useState(Bestsellproducts);
     console.log(setProducts)
+    
     const [ state, dispatch ] = useReducer(cartReducer, {
         products: products,
         cart: [],
