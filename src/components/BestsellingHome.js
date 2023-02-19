@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 import { FaShoppingBasket, FaTimesCircle } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { NavLink } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
 import { CartState, CurrencyState } from "../context/Context";
 
 
@@ -49,7 +51,10 @@ function BestsellingHome() {
                                                         <figure>
                                                             <img src={img} alt="pic" />
                                                         </figure>
-                                                        <div className="hover-show-bn">
+                                                        {/* <div className="buy-now-btn buy-now-btn">
+                                                            <button>Add to Cart</button>
+                                                        </div> */}
+                                                        {/* <div className="hover-show-bn">
                                                             {
                                                                 cart.some((p) => p.id === prod.id) ? (
                                                                     <button id="close" className="comon-hv-bn"
@@ -70,20 +75,40 @@ function BestsellingHome() {
                                                                         }
                                                                         }> <FaShoppingBasket /> </button>
                                                                 )}
-
-                                                        </div>
+                                                        </div> */}
                                                     </div>
-
                                                     <div className="ps-details text-center">
+                                                    <button className="" name="button" style={{border:'none', padding:'2px 2px', borderRadius:'5px'}} >
+                                                    {
+                                                                cart.some((p) => p.id === prod.id) ? (
+                                                                    <button id="close" className="comon-hv-bn"
+                                                                        onClick={() => {
+                                                                            dispatch({
+                                                                                type: 'REMOVE_FROM_CART',
+                                                                                payload: prod,
+                                                                            })
+                                                                        }
+                                                                        } style={{border:'none', padding:'2px 2px', borderRadius:'5px'}} > <FaTimesCircle /> Remove Item </button>
+                                                                ) : (
+                                                                    <button id="cart" className=""
+                                                                        onClick={() => {
+                                                                            dispatch({
+                                                                                type: 'ADD_TO_CART',
+                                                                                payload: prod,
+                                                                            })
+                                                                        }
+                                                                        } style={{border:'none', padding:'2px 2px', borderRadius:'5px'}} > <FaShoppingCart /> Add to Cart</button>
+                                                                )}
+                                                    </button>
                                                         <div to={link} className="cate-text d-table text-center m-auto">{cate}</div>
                                                         <div to={link} className="products-titel m-auto"> {title} </div>
                                                         <div className="d-flex align-items-center justify-content-center">
                                                             <h5 className="old-pice text-decoration-line-through">
                                                                 {oldprice}</h5>
-                                                            <h5 class="price-text ms-3">
+                                                            <div class="products-titel">
                                                                 {currency}
                                                                 {currency !== '$' ? priceToNum * rate : price}
-                                                            </h5>
+                                                            </div>
 
                                                         </div>
 

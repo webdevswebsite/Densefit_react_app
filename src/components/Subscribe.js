@@ -17,16 +17,16 @@ function Subscribe(){
         <>
         <div className="subsribe-div py-5">
             <div className="container">
-                <h6 className="text-center text-white" data-aos="fade-down"> Say Connected,Get updates about new offers </h6>
+                <h6 className="text-center text-white" data-aos="fade-down"> Get notification about the special offers </h6>
                 {/* <h2 className="text-center text-white" data-aos="fade-up"> Join Our Mailing List </h2> */}
-                <p className="text-center text-white" data-aos="fade-down"> By signing up you will be receiving our notification.</p>
+                <p className="text-center text-white" data-aos="fade-down"> We would send you updates ahead.</p>
                 <div className="col-md-6 m-auto bg-white" data-aos="fade-up">
                     <div className="d-flex align-items-center justify-content-between">
                         <div className="col-9">
                         <input type="text" className="form-control" placeholder="Your Email" />
                         </div>
                         <div className="col-3">
-                        <input type="submit" className="btn subscribe-bn" value="Subscribe"/>
+                        <input type="submit" className="btn subscribe-bn" value="Notify me"/>
                         </div>
                         
                         

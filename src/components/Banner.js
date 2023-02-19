@@ -20,8 +20,6 @@ function Banner() {
                 <input type="radio" name="slider" className="slide-radio2" id="slider_2" />
                 <input type="radio" name="slider" className="slide-radio3" id="slider_3" />
 
-
-
                 <div className="slider-pagination">
                     <label for="slider_1" className="page1">
 

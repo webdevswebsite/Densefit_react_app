@@ -44,7 +44,6 @@ const Context = ({ children }) => {
 
     })
 
-
     return (
         <Cart.Provider
             value={{
@@ -61,7 +60,7 @@ export const CartState = () => {
     return useContext(Cart);
 }
 
-//export currency state and call it as hoks where needed
+//export currency state and call it as hooks where needed
 export const CurrencyState = () => {
     return useContext(Currency);
 }
