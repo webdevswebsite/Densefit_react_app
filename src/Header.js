@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { AiFillDelete } from "react-icons/ai"
 import { FaShoppingBasket } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import $ from 'jquery';
-import { CartState, CurrencyState } from "./context/Context";
-
+import { CartState, CurrencyState } from "./context/Context"; 
 
 $(document).ready(function () {
     $(window).scroll(function () {
@@ -37,6 +36,9 @@ function Header() {
         localStorage.getItem('currency')
     )
 
+    // const [ disabled, setDisabled ] = useState(true);
+
+
     //handle currency update
     const handleChangeCurrency = ({ target: { value } }) => {
 
@@ -50,7 +52,12 @@ function Header() {
 
         //set the current current to local storage for persistency
     }
+    const navigate = useNavigate();
 
+    const HandelCheckout = () => {
+        if(cart.length < 1) {alert('Please add product(s) to cart')}
+        if(cart.length >= 1){navigate("/shipment")}
+    }
 
     useEffect(() => {
         console.log(rate, 'rate in header')
@@ -78,18 +85,6 @@ function Header() {
                             </NavLink>
                             {/* mobile header starts here------------------------ */}
                             <div style={{ alignItems: 'center', justifyContent: 'space-between'}} className="d-flex mbile-checkout ms-auto ">
-                                <span>
-                                    <select style={{ border: 'none' }} defaultValue={activeCurrency} onChange={handleChangeCurrency} >
-                                        {currencies.map((currency, idx) => (
-                                            <option
-                                                defaultValue={activeCurrency}
-                                                value={currency}
-                                                key={idx + currency}>
-                                                {currency}
-                                            </option>
-                                        ))}
-                                    </select>
-                                </span>
                                 <div className="dropdown">
                                     <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                         <FaShoppingBasket />
@@ -155,12 +150,24 @@ function Header() {
                                             </div>
                                         </li>
                                         <li>
-                                            <NavLink exact to="/shipment" className="btn d-table check-drop-bn"> Check out </NavLink>
+                                            <button onClick={HandelCheckout}  className="btn d-table check-drop-bn"> Checkout </button>
                                         </li>
 
                                     </ul>
                                     <span className="cat-count"> {cart.length} </span>
                                 </div>
+                                <span>
+                                    <select style={{ border: 'none', width:'70px', borderRadius:'8px', padding:'2px' }} defaultValue={activeCurrency} onChange={handleChangeCurrency} >
+                                        {currencies.map((currency, idx) => (
+                                            <option
+                                                defaultValue={activeCurrency}
+                                                value={currency}
+                                                key={idx + currency}>
+                                                {currency}
+                                            </option>
+                                        ))}
+                                    </select>
+                                </span>
                             </div>
                             {/* Nav bar here--------------------- */}
                             {/* <button className="navbar-toggler ms-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu" aria-controls="offcanvasExample">

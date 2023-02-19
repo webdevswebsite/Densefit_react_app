@@ -89,7 +89,7 @@ function CheckoutPayright() {
                             },
                         });
                     }
-                } className="btn paybn mt-3 w-100"> Payment now </NavLink>
+                } className="btn paybn mt-3 w-100"> Place Order </NavLink>
             </form>
         </>
     );
