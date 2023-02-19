@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
+import SubpageBanner from "./SubpageBanner";
 
 function BillingDetais() {
 
@@ -17,6 +18,8 @@ function BillingDetais() {
 
     return (
         <>
+          {/* <SubpageBanner name="Terms & Conditions" indexpage="Home" indexvisit="/" activepage="T & C" /> */}
+            
             <div className="biling-details">
                 <h2> Billing Address </h2>
                 <form action="" onSubmit={handleSubmit}>
@@ -66,7 +69,7 @@ function BillingDetais() {
 
                         </div>
                     </div>
-                    <button type="submit" className='btn w-50 billingbtn' style={{ padding: '5px', borderRadius: '8px', border: 'none', background: 'red', color: '#fff', maxWidth: 'content' }}>Submit billing detail</button>
+                    <button type="submit" className='btn w-50 billingbtn' style={{ padding: '5px', borderRadius: '8px', border: 'none', background: 'red', color: '#fff', maxWidth: 'content' }}>Submit shipping detail</button>
                 </form>
             </div>
         </>
