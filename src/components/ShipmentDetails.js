@@ -10,8 +10,8 @@ function ShipmentDetails() {
       <div className="checkout-body-div my-5" >
         <div className="container">
           <div className="row">
-            <div className="col-lg-12" style={{ magingTop: '50px' }}>
-              <div className="left-checkout" style={{ marginTop: '50px' }}>
+            <div className="col-lg-12" style={{ magingTop: '20px' }}>
+              <div className="left-checkout" style={{ marginTop: '20px' }}>
                 <BillingDetais />
                 {/* <Paymentmethod/> */}
               </div>
