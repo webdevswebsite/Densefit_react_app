@@ -1,8 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import smallpicone from "../images/109076-cypruswine-Cyprus-Maratheftiko-Shiraz-wine-748x549.jpg";
-// import smallpictwo from "../images/navbharat-times.jpg";
-// import landscapepictwo from "../images/istockphoto-1183406603-170667a.jpg";
-// import bigpictwo from "../images/JP-wine-under-250-_255x255_cd3b2cb5-b368-408a-b28b-4ba802f9ee27.webp";
 import whychosedetails from "./WhychoosApi";
 import Aos from "aos";
 import "aos/dist/aos.css";

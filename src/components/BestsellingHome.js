@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 
-import { FaShoppingBasket, FaTimesCircle } from "react-icons/fa";
+import { FaTimesCircle } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { CartState, CurrencyState } from "../context/Context";
 
@@ -51,31 +50,6 @@ function BestsellingHome() {
                                                         <figure>
                                                             <img src={img} alt="pic" />
                                                         </figure>
-                                                        {/* <div className="buy-now-btn buy-now-btn">
-                                                            <button>Add to Cart</button>
-                                                        </div> */}
-                                                        {/* <div className="hover-show-bn">
-                                                            {
-                                                                cart.some((p) => p.id === prod.id) ? (
-                                                                    <button id="close" className="comon-hv-bn"
-                                                                        onClick={() => {
-                                                                            dispatch({
-                                                                                type: 'REMOVE_FROM_CART',
-                                                                                payload: prod,
-                                                                            })
-                                                                        }
-                                                                        }> <FaTimesCircle /> </button>
-                                                                ) : (
-                                                                    <button id="cart" className="comon-hv-bn"
-                                                                        onClick={() => {
-                                                                            dispatch({
-                                                                                type: 'ADD_TO_CART',
-                                                                                payload: prod,
-                                                                            })
-                                                                        }
-                                                                        }> <FaShoppingBasket /> </button>
-                                                                )}
-                                                        </div> */}
                                                     </div>
                                                     <div className="ps-details text-center">
                                                     <button className="" name="button" style={{border:'none', padding:'2px 2px', borderRadius:'5px'}} >

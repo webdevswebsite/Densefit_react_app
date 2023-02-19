@@ -15,16 +15,16 @@ function Footer() {
         <div className="container">
 
           <div className="row row-cols-2 gy-5 g-md-0 row-cols-lg-4 footer-bottom-div justify-content-lg-between">
-            <div className="col">
+            <div className="col" style={{width:'500px'}}>
               <div className="comon-footer">
                 <h5> Densefit </h5>
                 <ul className="list-unstyled text-white">
-                  <li> <b> Help Center: </b></li>
-                  <li> Delivery options and timelines
-                    How to return a product?
-                    Corporate and bulk purchases
-                    Report a Product</li>
-                  {/* <li> <b> Email: </b>  support&kowine.com </li> */}
+                  <li>
+                    Densefit is an online shopping platform.
+                    Our onlinestore offers you the best household products.
+                    We offers deals, discounts, flash sales and never ceases to form campaigns all year around, all for the satisfaction and joy of our customers.
+                    We promises to provide you with the best service and 100% genuine products. We deliver your order at your doorstep as fast as possible, offer you safe and secure payments and also provide free returns. Stay tuned and get the best prices on all your favorite products during all over the year.
+                  </li>
                 </ul>
 
                 <ul className="list-unstyled socal">
@@ -38,24 +38,11 @@ function Footer() {
 
             <div className="col">
               <div className="comon-footer justify-content-lg-center d-grid">
-                <h5> Quick Links </h5>
-                <ul className="list-unstyled">
-                  {/* <li> <NavLink to="/"> Help Center </NavLink>  </li> */}
-                  <li> <NavLink to="/"> Privacy policy </NavLink></li>
-                  {/* <li> <NavLink to="/"> Terms of Service </NavLink> </li> */}
-                  {/* <li> <NavLink to="/"> Help Center </NavLink> </li> */}
-
-                </ul>
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="comon-footer justify-content-lg-center d-grid">
                 <h5> Contact </h5>
                 <ul className="list-unstyled">
                   {/* <li> <NavLink to="/"> Help Center </NavLink>  </li>
                             <li> <NavLink to="/"> Privacy policy </NavLink></li> */}
-                  <li> <NavLink to="/"> Terms of Service </NavLink> </li>
+                  <li> <NavLink to=""> <strong>Contact us: </strong>info@densefit.com</NavLink> </li>
                   {/* <li> <NavLink to="/"> Help Center </NavLink> </li> */}
 
                 </ul>
@@ -64,10 +51,10 @@ function Footer() {
 
             <div className="col">
               <div className="comon-footer justify-content-lg-center d-grid">
-                <h5> Shipping </h5>
+                <h5> Terms & Condition </h5>
                 <ul className="list-unstyled">
-                  <li> <NavLink to="/"> Change & Returns </NavLink>  </li>
-                  <li> <NavLink to="/"> FAQ </NavLink> </li>
+                  <li> <NavLink to="/about">  Terms of Service </NavLink>  </li>
+                  {/* <li> <NavLink to="/"> FAQ </NavLink> </li> */}
                   {/* <li> <NavLink to="/"> Terms of Service </NavLink> </li>
                             <li> <NavLink to="/"> Help Center </NavLink> </li>
                              */}
@@ -253,7 +240,7 @@ function Footer() {
 
           <ul className="list-unstyled mt-4">
             <li data-bs-dismiss="offcanvas"><NavLink className="dropdown-item" to="/">Home </NavLink> </li>
-            
+
           </ul>
 
         </div>
