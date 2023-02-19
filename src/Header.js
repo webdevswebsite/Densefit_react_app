@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { BsPerson } from "react-icons/bs";
 import { AiFillDelete } from "react-icons/ai"
 import { FaShoppingBasket } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -57,7 +56,7 @@ function Header() {
         console.log(rate, 'rate in header')
 
         setTotal(cart.reduce((acc, curr) => acc + Number(curr.price), 0));
-    }, [ cart ])
+    }, [ cart, rate ])
 
     useEffect(() => {
         // on page reload activeCurency clears the state, prevent it from updating localstorage

@@ -1,5 +1,4 @@
 import React from "react";
-import Abouttopimg from "../images/6022263c97d5fb0021955751_optimized_740_c740x1120-0x0.webp";
 
 function AboutpageSectionone() {
     return (
